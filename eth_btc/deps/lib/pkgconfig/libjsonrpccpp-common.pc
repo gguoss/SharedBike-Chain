@@ -1,0 +1,5 @@
+Name: libjsonrpccpp-common
+Description: Common libraries for libjson-rpc-cpp
+Version: 0.7.0
+Libs: -L/home/gavin/work/cpp/ethereum/deps/lib/ -ljsoncpp
+Cflags: -I/home/gavin/work/cpp/ethereum/deps/include

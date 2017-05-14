@@ -1,0 +1,42 @@
+.nav {
+    font-size: 48px;
+}
+
+.nav .cell{
+    padding: 10px;
+    display:table-cell
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.cell {
+    position: relative;
+}
+
+.head {
+    margin: 10%;
+    text-align: center;
+    padding-top: 10%;
+}
+.content div{
+    margin: auto;
+    display: block;
+}
+
+.box {
+    margin: auto;
+    padding-top: 48px;
+    border: none;
+    font-size: inherit;
+    line-height: 24px;
+    width: 480px;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+}
+
+.box button {
+    margin: auto;
+}

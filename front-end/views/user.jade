@@ -1,0 +1,27 @@
+extends layout
+
+block header
+  link(href="stylesheets/user.css", rel="stylesheet")
+
+block content
+  div.nav
+    div.cell
+      a(href='/logout', title="user").class 登出
+  div.head
+    h1 用户信息
+  div.content
+    div.table
+      div.box
+        button(onclick="location='/user/register_bike'").raised-btn-primary 我想出租
+      div.box
+        button(onclick="location='/rent'").raised-btn-primary 我想租车
+    p 我的余额 : #{balance}
+    p 我的押金 : #{rent}
+    p 我租出的车 :
+    - for (var address in result)
+        p 
+          if result[address] == '0x'
+            - break
+          a(href='/detail?bike_address='+result[address], title='Bike_address').class #{result[address]}
+  
+    p 我出租的车 :

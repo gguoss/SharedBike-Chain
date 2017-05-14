@@ -1,0 +1,36 @@
+.nav {
+    font-size: 48px;
+}
+
+.nav .cell{
+    padding: 10px;
+    display:table-cell
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.cell {
+    position: absolute;
+}
+
+.head {
+    margin: 10%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.table {
+    width: 480px;
+    margin: auto;
+}
+
+.box {
+    padding-bottom: 10%;
+}
+
+
+.content {
+    margin: 10%;
+}

@@ -1,0 +1,26 @@
+extends layout
+
+block header
+  link(href="stylesheets/detail.css", rel="stylesheet")
+
+block content
+  div.nav
+    div.cell
+      a(href="/", title="home") 主页
+  div
+    h1 Bike on Chain
+    
+  p 车主 : #{owner}
+  if rent == 1
+    p 是否可用: 否 #{rent}
+  else
+    p 是否可用: 是 #{rent}
+  p 初始驶距离: #{origin_distance}
+  p 还车距离: #{update_distance}
+  p 是否出界: #{out_of_bound}
+  p 奖励 : #{reward_value}
+
+  if rent == 1
+    a(href='/refund?address='+address, title='refund').class 确认还车
+  else
+    a(href='/rentbike?address='+address, title='refund') 确认租车

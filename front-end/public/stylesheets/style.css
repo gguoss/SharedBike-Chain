@@ -1,0 +1,200 @@
+body {
+  padding: 50px;
+  font: 32px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: 8px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    letter-spacing: .2em;
+    font-weight: bold;
+    font-size: inherit;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 2px;
+    text-align: center;
+    align-items: flex-start;
+    background-color: inherit;
+}
+.flat-btn {
+    width: 480px;
+    height: 80px;
+    color: #000000;
+    overflow: hidden;
+}
+.flat-btn-primary {
+    width: 480px;
+    height: 80px;
+    color: #1fbcd2;
+    overflow: hidden;
+}
+.flat-btn-secondary {
+    width: 480px;
+    height: 80px;
+    color: #ff4081;
+    overflow: hidden;
+}
+.flat-btn-disabled {
+    width: 480px;
+    height: 80px;
+    pointer-events: none; color: #bdbdbd;
+    overflow: hidden;
+}
+
+.raised-btn {
+    width: 480px;
+    height: 80px;
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #000000;
+    overflow: hidden;
+}
+.raised-btn-primary {
+    width: 480px;
+    height: 80px;
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #ffffff;
+    background-color: #1fbcd2;
+    overflow: hidden;
+}
+.raised-btn-secondary {
+     width: 480px;
+    height: 80px;
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #ffffff;
+    background-color: #ff4081;
+    overflow: hidden;
+}
+.raised-btn-disabled {
+     width: 480px;
+    height: 80px;
+    pointer-events: none;
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #ffffff;
+    background-color: #bdbdbd;
+    overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  background: rgba(0,0,0, 0.15);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.ripple.show {
+  animation: ripple .75s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.cover {
+  position: absolute;
+  background: rgba(0,0,0, 0.15);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.cover.show {
+  animation: cover .75s ease-out;
+}
+
+@keyframes cover {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.textfield-box {
+    margin: 12px;
+    border: none;
+    font-size: 36px;
+    line-height: 24px;
+    width: 480px;
+    height: 96px;
+    display: inline-block;
+    position: relative;
+}
+
+.textfield {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.870588);
+    cursor: initial;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    height: 100%;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+.textfield-float {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.870588);
+    cursor: initial;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    height: 100%;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+.textfield-box > .textfield:focus {
+    border-bottom: 2px solid #1fbcd2;
+    transition: border-bottom 0.1s ease 0.1s;
+}
+
+.textfield-box > .textfield:disabled {
+    border-bottom: 2px dotted #bdbdbd;
+}
+
+.textfield-box > .textfield + .float {
+    color: #a9a9a9;
+    position: absolute;
+    font-size: 16px;
+    margin-top: -36px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    pointer-events: none;
+}
+
+.textfield-box > .textfield:focus + .float {
+    color: #1fbcd2;
+    position: absolute;
+    font-size: 12px;
+    margin-top: -64px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}

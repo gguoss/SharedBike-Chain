@@ -1,0 +1,39 @@
+.head {
+    text-align: center;
+    height: 200px;
+    padding-top: 30%;
+}
+
+.head h1 {
+    padding-top: 0px;
+}
+
+.form {
+    width: 480px;
+    height: 400px;
+    margin: auto;
+    padding: 10%;
+    padding-top: 10%;    
+    border: 5px;
+    border-width: 5px;
+    border-color: #000;
+}
+
+.form_field {
+    width: 240px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.form_button {
+    display: flex;
+}
+
+.reg_log {
+    text-align: center;
+    color: #77f;
+}
+
+.reg_log p {
+    font-size: 20px, bold;
+}

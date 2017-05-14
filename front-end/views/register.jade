@@ -1,0 +1,21 @@
+extends layout
+
+block header
+  link(rel='stylesheet', href='/stylesheets/reg_log.css')
+
+block content
+  div#head.head
+    h1 Welcome to Bike on Chain
+
+  div#form.form
+    form(action='/register',method='post')
+      div.textfield-box
+        input(id='user', type='text', name="user", placeholder="Username").textfield
+      div.textfield-box
+        input(id='password', type='password', name="password", placeholder="Password").textfield
+      div.button.form_button
+        button(type='submit', name='action', value='register').raised-btn register
+      div.reg_log
+         p 如果你已经注册了
+      div.button.form_button
+        button(type='submit', name='action', value='login').raised-btn-primary login

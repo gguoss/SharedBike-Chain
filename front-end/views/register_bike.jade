@@ -1,0 +1,19 @@
+extends layout
+
+block header
+  link(href="/stylesheets/register_bike.css", rel="stylesheet")
+  
+block content
+  div.nav
+    div.cell
+      a(href="/", title="home").class 主页
+  div.head
+    h1 注册单车
+  div.content
+    form(action='/user/register_bike',method='post')
+      div.textfield-box
+        input(id='password', type='text', name='password', placeholder='Bike Address').textfield
+      div.textfield-box
+        input(id='rent', type='text', name='rent', placeholder='Rent').textfield
+      div.box
+        button(type='submit', action='submit').raised-btn-primary submit

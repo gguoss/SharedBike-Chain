@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>;-DCMAKE_POSITION_INDEPENDENT_CODE=;-GUnix Makefiles;/home/gavin/work/cpp/ethereum/deps/src/secp256k1'

@@ -1,0 +1,29 @@
+.user {
+    text-align: center;
+    padding: 5%
+}
+
+.user a{
+    text-decoration: none;
+}
+
+.user-avator {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.box {
+    padding: 5%;
+    height: 100px
+}
+
+button {
+    margin: auto;
+}
+
+.raised-btn{
+    border-radius: 12px;
+    width:150px;
+    height:90px;
+}

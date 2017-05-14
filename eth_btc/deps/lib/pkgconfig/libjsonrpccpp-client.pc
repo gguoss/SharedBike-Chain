@@ -1,0 +1,5 @@
+Name: libjsonrpccpp-client
+Description: A C++ client implementation of json-rpc.
+Version: 0.7.0
+Libs: -L/home/gavin/work/cpp/ethereum/deps/lib/ -ljsoncpp -ljsonrpccpp-common -ljsonrpccpp-client -lcurl
+Cflags: -I/home/gavin/work/cpp/ethereum/deps/include

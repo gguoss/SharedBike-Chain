@@ -1,0 +1,21 @@
+extends layout
+
+block header
+  link(href="stylesheets/rent.css", rel="stylesheet")
+  
+
+block content
+  div.nav
+    div.cell
+      a(href='/', title="home") 主页
+  h1
+      p 链上单车
+
+  p 附近可用单车 : 
+  div.bike_list
+    - for (var address in result)
+      div.bike
+        p
+          if result[address] == '0x'
+            - break
+          a(href='/detail?bike_address='+result[address], title='Bike_address').class #{result[address]}

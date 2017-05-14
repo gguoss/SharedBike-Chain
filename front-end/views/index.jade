@@ -1,0 +1,12 @@
+extends layout
+
+block header
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+  div.user
+    button(onclick="location='/user'", title="user").flat-btn #{user}
+  div.box
+    button(onclick="location='/user/register_bike'").raised-btn 我想出租
+  div.box
+    button(onclick="location='/rent'").raised-btn 我想租车
